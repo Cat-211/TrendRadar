@@ -35,7 +35,12 @@ on:
     #   "15 * * * *"     → 每小时第15分钟 / minute 15 every hour
     #   "30 0-14 * * *"  → 北京时间 8:00-22:00 每小时第30分钟 / Beijing 8am-10pm
     #
-    - cron: "33 0,3,6,9,12 * * *"
+    - cron: "33 0,3,6,9 * * *"
+
+    # 晚间推送窗口备用触发：北京时间 20:35、21:05、21:35
+    # GitHub Actions cron 使用 UTC 时间
+    - cron: "35 12 * * *"
+    - cron: "05 13 * * *"
 
   workflow_dispatch:
 
