@@ -470,8 +470,8 @@ custom:
 
     evening_summary:
       name: "晚间精选汇总"
-      start: "20:30"
-      end: "22:00"
+      start: "20:00"
+      end: "23:00"
       # frequency_file: "xxx.txt"               # 关键词文件（可选，位于 config/custom/keyword/）
       # interests_file: "xxx.txt"               # AI 兴趣文件（可选，位于 config/custom/ai/）
       # filter_method: "ai"                     # 可选；不填则使用全局 config.yaml 的 filter.method
